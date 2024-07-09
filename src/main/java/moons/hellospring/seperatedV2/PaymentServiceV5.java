@@ -1,21 +1,22 @@
-package moons.hellospring.seperated;
+package moons.hellospring.seperatedV2;
 
 
 import moons.hellospring.Payment;
+import moons.hellospring.interfaced.ExRateProvider;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class PaymentServiceV3_1 {
-    private final WebApiExRateProvider exRateProvider;
+public class PaymentServiceV5 {
+    private final ExRateProvider exRateProvider;
 
-    public PaymentServiceV3_1() {
-        this.exRateProvider = new WebApiExRateProvider();
+    public PaymentServiceV5(ExRateProvider exRateProvider) {
+        this.exRateProvider = exRateProvider;
     }
 
     public Payment prepare(Long orderId, String currency, BigDecimal foreignCurrencyAmount) throws IOException {
-        BigDecimal exRate = exRateProvider.getWebExRate(currency);
+        BigDecimal exRate = exRateProvider.getExRate(currency);
         BigDecimal convertedAmount = foreignCurrencyAmount.multiply(exRate);
         LocalDateTime validUntil = LocalDateTime.now().plusMinutes(30);
 

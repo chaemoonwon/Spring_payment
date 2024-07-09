@@ -1,13 +1,13 @@
-package moons.hellospring.seperated;
+package moons.hellospring.interfaced;
 
 import moons.hellospring.Payment;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 
-public class ClientV2_2 {
+public class ClientV3 {
     public static void main(String[] args) throws IOException {
-        PaymentServiceV3_2 paymentService = new PaymentServiceV3_2();
+        PaymentServiceV4 paymentService = new PaymentServiceV4();
         Payment payment = paymentService.prepare(100L,"USD", BigDecimal.valueOf(50.7));
         System.out.println(payment);
     }

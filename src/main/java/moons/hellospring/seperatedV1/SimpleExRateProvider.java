@@ -1,4 +1,4 @@
-package moons.hellospring.seperated;
+package moons.hellospring.seperatedV1;
 
 import java.io.IOException;
 import java.math.BigDecimal;
