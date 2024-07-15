@@ -1,8 +1,7 @@
-package moons.hellospring.seperatedV2;
+package moons.hellospring.objectFactory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import moons.hellospring.ExchangeRate;
-import moons.hellospring.interfaced.ExRateProvider;
 
 import java.io.BufferedReader;
 import java.io.IOException;
