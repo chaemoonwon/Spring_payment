@@ -1,19 +1,20 @@
-package moons.hellospring.seperatedV2;
+package moons.hellospring.springContainer;
+
 
 
 import moons.hellospring.Payment;
-import moons.hellospring.interfaced.ExRateProvider;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class PaymentServiceV5 {
-    private final ExRateProvider exRateProvider;
+//@Component  //BeanFactory가 해당 정보를 참고함
+public class PaymentServiceV6 {
+    ExRateProvider exRateProvider;
 
-    //환율 정보를 어떻게 가져올 것인가?
-    //OCP 적용
-    public PaymentServiceV5(ExRateProvider exRateProvider) {
+    public PaymentServiceV6(ExRateProvider exRateProvider) {
         this.exRateProvider = exRateProvider;
     }
 
