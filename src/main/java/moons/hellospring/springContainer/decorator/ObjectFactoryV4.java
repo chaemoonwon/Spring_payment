@@ -1,8 +1,6 @@
-package moons.hellospring.springContainer.Decorator;
+package moons.hellospring.springContainer.decorator;
 
 import moons.hellospring.springContainer.ExRateProvider;
-import moons.hellospring.springContainer.PaymentServiceV6;
-import moons.hellospring.springContainer.SimpleExRateProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

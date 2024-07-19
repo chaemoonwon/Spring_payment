@@ -1,4 +1,4 @@
-package moons.hellospring.springContainer.Decorator;
+package moons.hellospring.springContainer.DIP.exRate;
 
 import moons.hellospring.springContainer.ExRateProvider;
 

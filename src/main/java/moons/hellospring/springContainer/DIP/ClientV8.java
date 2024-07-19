@@ -1,8 +1,8 @@
-package moons.hellospring.springContainer.Decorator;
+package moons.hellospring.springContainer.DIP;
 
 import moons.hellospring.Payment;
-import moons.hellospring.springContainer.ObjectFactoryV2;
-import moons.hellospring.springContainer.PaymentServiceV6;
+import moons.hellospring.springContainer.decorator.ObjectFactoryV5;
+import moons.hellospring.springContainer.decorator.PaymentServiceV8;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
